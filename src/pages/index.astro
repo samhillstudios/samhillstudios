@@ -3,8 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import { Image } from 'astro:assets';
-import myImage from '../assets/my_image.png';
+import myLogo from '../Logo1.svg';
 ---
 
 <!doctype html>
@@ -15,7 +14,7 @@ import myImage from '../assets/my_image.png';
 	<body>
 		<Header />
 		<main>
-			<h1><img src="/Logo1.svg" width="1600" height="900" decoding="async" loading="lazy" alt="A description of my image."/></h1>
+			<h1><img src={myLogo.src} width="1600" height="900" decoding="async" loading="lazy" alt="logo"/></h1>
 			<hr>
 			<br>
 			<h3>Oh How We Are</h3>
