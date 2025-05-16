@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import myLogo from '../Logo1.svg';
 ---
 
 <Layout
-	title="Sam Hill Studios"
+	title=<img src={myLogo.src} width="1600" height="900" decoding="async" loading="lazy" alt="logo"/>
 	description="Sam Hill Studios"
 	pubDate={new Date('May 09 2025')}
 >
